@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Tetego 기술 용어 번역기",
+  "version": "0.3.0",
+  "description": "웹페이지의 텍스트를 선택하여 쉽고 재미있는 기술 용어 번역을 받아보세요.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ]
+}
